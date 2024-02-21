@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TricACT</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav-bar">
+
+    <!-- Caja -->
+    <div id="nav-bar-container">
+
+        <h2>Mi Triquita</h2>
+
+        <div id="links-container">
+          <a class="link" href="index.html">Pagina principal</a>
+
+
+        </div>
+
+
+    </nav>
+
+    <main id="main-container"> 
+      
+      <h1 id="main-title">TriTASK</h1>
+      
+      <div id="tabla-container">
+
+        <!-- Este form es la barra input y el boton de + -->
+        <form>
+
+        <input id="task" placeholder="Dime que tienes por hacer..." type="text">
+
+        <button id="input-icon" type="button" >
+        <svg id="plus-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+        </svg></button>
+
+        </form>
+
+        <div id="tareas-container">
+
+          <ul id="task-list">
+            
+            <div id="first-task">
+              <button class="x-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+              </button>
+              <li class="no-subrayado">
+              <p class="text-task-container">Sacar la basura</p>
+              </li>
+              <button class="check-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg></button>
+            </div>
+
+            <div id="second-task">
+              <button class="x-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+              </button>
+              <li class="no-subrayado">
+              <p class="text-task-container">Limpiar el cuarto
+              </p>
+              </li>
+              <button class="check-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg></button>
+            </div>
+
+            <div id="third-task">
+              <button class="x-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+              </button>
+              <li class="tachado">
+              <p class="text-task-container">Estudiar matematica</p>
+              </li>
+              <button class="check-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg></button>
+            </div>
+          </ul>
+        </div>
+
+        <div id="cont-container">
+          <h5 id="total-container">Total:3</h5>
+          <h5 id="completed-container">Completado:1</h5>
+          <h5 id="incompleted-container">Incompleto:2</h5>
+
+        </div>
+        
+
+      </div>
+
+    </main>
+</body>
+</html>
