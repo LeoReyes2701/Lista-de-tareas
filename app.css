@@ -109,13 +109,12 @@ body {
     margin: 0;
 }
 
-#task {
+#input-task {
     min-width:90%;
     height: 20px;
     border-radius: 0.25rem;
     font-size: inherit;
     
-
 }
 
 #tareas-container {
@@ -127,7 +126,7 @@ body {
 
 
 /* justify-content: space-between se coloca para que quede un espacio entre todos lo elementos y quede el check pegado a la derecha */
-#first-task {
+.tasks {
     display: flex;
     flex-direction: row;
     background-color: rgb(189, 189, 189);
@@ -137,31 +136,11 @@ body {
 
 }
 
-#second-task {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(189, 189, 189);
-    margin-bottom: 10px;
-    justify-content: space-between;
-    
-}
-
-#third-task {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(189, 189, 189);
-    margin-bottom: 10px;
-    justify-content: space-between;
-}
-
 .text-task-container {
     overflow: hidden;
     text-align: justify;
 }
 
-.tachado {
-    text-decoration: line-through;
-}
 
 #task-list {
     display: flex;
@@ -172,6 +151,7 @@ body {
     margin-bottom: 0;
     overflow: auto;
     width: 100%;
+    min-height: 20vh;
 }
 
 .check-button {
@@ -214,7 +194,7 @@ form {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     justify-content: space-between;
-
+    margin-top: 10px;
 }
 
 /* Estos son lo cont de abajo de las tareas */
