@@ -40,3 +40,28 @@ const addTaskToList = () => {
 
 //Esto es un evento para que cuando se haga click en el boton del input se ejecute la funcion
 inputIcon.addEventListener('click', addTaskToList)
+
+taskList.addEventListener('click', (event) => {
+    if (event.target.classList.contains('x-button')) {
+        event.target.closest('li').remove();
+    } else if (event.target.classList.contains('check-button')) {
+        const taskTextP = event.target.previousElementSibling;
+        taskTextP.classList.toggle('task-text-checked');
+        }
+    });
+
+const updateTaskCounters = () => {
+    // Actualizar la cantidad total de tareas
+    totalTasks = taskList.querySelectorAll('li').length;
+    
+    // Actualizar la cantidad de tareas completadas
+    completedTasks = taskList.querySelectorAll('.task-text-checked').length;
+    
+    // Actualizar la cantidad de tareas incompletas
+    const incompleteTasks = totalTasks - completedTasks;
+    
+    // Actualizar el contenido de los contadores en el HTML
+    document.querySelector('#total-container').textContent = totalTasks;
+    document.querySelector('#completed-container').textContent = completedTasks;
+    document.querySelector('#incompleted-container').textContent = incompleteTasks;
+};
