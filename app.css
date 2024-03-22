@@ -330,4 +330,12 @@ form {
         width: 100%;
     }
 
+    h5{
+        font-size: 1.2rem;
+    }
+
+    #cont-container {
+        margin-top: 20px;
+    }
+
 }
