@@ -50,18 +50,3 @@ taskList.addEventListener('click', (event) => {
         }
     });
 
-const updateTaskCounters = () => {
-    // Actualizar la cantidad total de tareas
-    totalTasks = taskList.querySelectorAll('li').length;
-    
-    // Actualizar la cantidad de tareas completadas
-    completedTasks = taskList.querySelectorAll('.task-text-checked').length;
-    
-    // Actualizar la cantidad de tareas incompletas
-    const incompleteTasks = totalTasks - completedTasks;
-    
-    // Actualizar el contenido de los contadores en el HTML
-    document.querySelector('#total-container').textContent = totalTasks;
-    document.querySelector('#completed-container').textContent = completedTasks;
-    document.querySelector('#incompleted-container').textContent = incompleteTasks;
-};
