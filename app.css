@@ -31,11 +31,10 @@ body {
     right: 0;
     top: 0;
 }
+
 #nav-bar-container > h2 {
     margin: 15;
     color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
 }
 
 #nav-bar-container {
@@ -54,6 +53,7 @@ body {
     font-family: inter;
     color: white;
     text-decoration: none;
+    font-weight: bold;
     font-size: 17px;
 
 }
@@ -92,8 +92,9 @@ body {
 #input-icon {
     border-radius: 1rem;
     background-color: blue;
-    height: 26px;
-    width: 10%;
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: 1rem;
     color: white;
     padding: 0;
 }
@@ -110,11 +111,11 @@ body {
 }
 
 #input-task {
-    min-width:90%;
-    height: 20px;
+    min-width:80%;
     border-radius: 0.25rem;
     font-size: inherit;
     padding: 1rem;
+    font-size: 1.3rem;
 }
 
 ::placeholder{
@@ -139,7 +140,8 @@ body {
     margin-bottom: 10px;
     justify-content: space-between;
     margin-top: 0;
-
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .text-task-container {
@@ -157,7 +159,7 @@ body {
     margin-bottom: 0;
     overflow: auto;
     width: 100%;
-    min-height: 20vh;
+    min-height: 25vh;
 }
 
 .check-button {
@@ -165,7 +167,7 @@ body {
     width: 2rem;
     flex-shrink: 0;
     margin-left: 10px;
-    border-radius: 0.375rem;
+    border-radius: 0.5rem;
 }
 
 .check-button:active {
@@ -177,6 +179,7 @@ body {
     margin-right: 10px;
     width: 2rem;
     flex-shrink: 0;
+    border-radius: 0.5rem;
 }
 
 .x-button:active {
@@ -187,10 +190,11 @@ body {
 form {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: last baseline;
     margin: 0;
     padding: 0;
     min-width: 100%;
+    gap: 0.5rem;
 }
 
 #cont-container {
@@ -255,6 +259,23 @@ form {
         
     }
 
+    #input-task {
+        min-width: 92%;
+        border-radius: 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    #input-icon {
+        width: 5%;
+        flex-shrink: 0;
+        height: 10%;
+    }
+
+    form{
+        gap: 0;
+        justify-content: space-between;
+    }
+
     #main-title {
         margin-top: 5%;
         margin-bottom:0 ;
@@ -262,10 +283,7 @@ form {
 
     #main-container {
         height: 100vh;
-        max-width: 80rem;
-        justify-content: center;
     }
-
 
 
     #nav-bar-container {
@@ -276,7 +294,6 @@ form {
         min-width: 95%;
         margin-right: 20px;
         margin-left: 20px;
-
     }
 
     #cont-container {
@@ -291,31 +308,26 @@ form {
     
     }
 
-    #input-icon {
-        width: 5%;
-        flex-shrink: 0;
-        height: 3rem;
+    svg{
+        width: 2rem;
+        height: 2rem;
     }
 
-    /* #plus-icon{
-        font-size: 100px;
-    } */
-    #task {
+    .check-button{
+        width: 3rem;
+    }
+
+    .x-button{
+        width: 3rem;
+    }
+
+    .tasks {
         width: 100%;
-        height: 3rem;
-    }
-
-    #input-icon {
-        height: auto;
+        height: 5rem;
     }
 
     #tareas-container {
         width: 100%;
     }
-
-    
-
-    
-
 
 }
