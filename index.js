@@ -30,10 +30,13 @@ const addTaskToList = () => {
         // Agregamos la tarea a la lista
         taskList.appendChild(taskItem);
 
+        document.querySelector("#input-task").reset();
+
     }   else {
     }   alert('Por favor, escribe una tarea valida.');
     
 };
+
 
 //Esto es un evento para que cuando se haga click en el boton del input se ejecute la funcion
 inputIcon.addEventListener('click', addTaskToList)
