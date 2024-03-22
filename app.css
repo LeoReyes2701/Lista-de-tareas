@@ -92,8 +92,8 @@ body {
 #input-icon {
     border-radius: 1rem;
     background-color: blue;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: inherit;
+    /* width: 3.5rem; */
     padding: 1rem;
     color: white;
     padding: 0;
@@ -111,10 +111,10 @@ body {
 }
 
 #input-task {
-    min-width:80%;
-    border-radius: 0.25rem;
+    min-width:75%;;
     font-size: inherit;
     padding: 1rem;
+    border-radius: 0.5rem;
     font-size: 1.3rem;
 }
 
@@ -204,10 +204,8 @@ form {
 #cont-container {
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    justify-content: space-between;
+    gap: 5px;
+    margin: 0 auto;
     margin-top: 10px;
 }
 
