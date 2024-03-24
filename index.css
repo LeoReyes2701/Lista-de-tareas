@@ -16,7 +16,7 @@ body {
   font-family: "Inter";
   padding-top: 4rem;
   height: 100vh;
-  background-color: black;
+  background-color: rgb(39, 36, 36);
 }
 
 #nav-bar {
